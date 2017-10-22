@@ -20,8 +20,12 @@
     padding: 0 $padding-side 40px $padding-side;
 
     .item{
-      margin-top: 20px;
-      margin-bottom: 40px;
+      padding-top: 40px;
+      padding-bottom: 20px;
+
+      &:not(:first-child){
+        border-top: 1px solid rgba(175, 175, 175, 0.2);
+      }
     }
 
     .menu{
