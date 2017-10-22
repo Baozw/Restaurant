@@ -1,0 +1,42 @@
+@import "../../assets/styles/common.scss";
+
+.menu-bar {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $color-blue;
+  }
+
+  li {
+      float: left;
+
+      .logo {
+        padding: 0 16px;
+        height: 48px;
+      }
+
+
+      a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+        &:hover:not(.active) {
+          background-color: $color-blue-dark;
+        }
+
+        .menu-arrow{
+          font-size: 10px;
+          margin-left: 6px;
+        }
+    }
+  }
+
+  .active {
+      background-color: $color-blue-dark;
+  }
+}

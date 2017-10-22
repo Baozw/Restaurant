@@ -1,0 +1,40 @@
+@import "../../assets/styles/common.scss";
+
+.home-page{
+
+  .header{
+    height: 100%;
+    color: white;
+    background-color: $color-blue-light;
+    padding: 60px $padding-side 40px $padding-side;
+
+    .space{
+      height: 60px;
+    }
+    .title {
+      margin-bottom: 60px;
+    }
+  }
+
+  .contents{
+    padding: 0 $padding-side 40px $padding-side;
+
+    .item{
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .menu{
+      .menu-title{
+        text-align:center;
+        margin-bottom:20px;
+      }
+    }
+  }
+
+  footer{
+    margin: 0 $padding-side;
+    padding: 20px;
+    background-color: $color-gray;
+  }
+}

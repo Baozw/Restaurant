@@ -1,0 +1,16 @@
+<div *ngIf="content">
+  <div *ngIf="left" class="col-md-3">
+    <p style="padding:20px;"></p>
+    <h3 align=center>{{content.Title}}</h3>
+  </div>
+  <div class="col-md-9">
+    <h2>{{content.Name}}</h2>
+    <h4 *ngIf="content.Position">{{content.Position}}</h4>
+    <p>{{content.Description}}</p>
+    <p><a  href="#">More &raquo;</a></p>
+  </div>
+  <div *ngIf="!left" class="col-md-3">
+      <p style="padding:20px;"></p>
+      <h3 align=center>{{content.Title}}</h3>
+    </div>
+</div>

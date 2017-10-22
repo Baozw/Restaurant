@@ -1,0 +1,27 @@
+<div class="home-page container-fluid">
+  <div class="header row">
+      <div class="header-content col-md-8">
+        <h1 class="title">Ristorante Il Fornello</h1>
+        <p>Simple, fresh ingredients, prepared and cooked with love and passion become truly great dishes, from wood-oven baked Neapolitan style pizzas to pastas, entrees!</p>
+    </div>
+  </div>
+  <div class="contents">
+    <div class="row item" *ngFor="let item of contents; let i=index" >
+      <app-content [content]="item" [left]="i%2!==0">
+      </app-content>
+    </div>
+    <div class="row menu">
+        <h2 class="menu-title">Menu</h2>
+          <div class="row" *ngFor="let menuitem of menu">
+            <div class="col-md-10 col-md-offset-1 menu-item">
+              <h4 class="menu-name col-md-2">{{menuitem.Title}}</h4>
+              <p class="menu-desc col-md-8">{{menuitem.Description}}</p>
+              <h4 class="menu-price col-md-2">{{menuitem.Price}}</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+</div>
